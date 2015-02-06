@@ -1,0 +1,30 @@
+@font-face {
+	font-family: Mosaic;
+	src: url(MosaicFont.OTF); 
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+div.head {
+	background-color:#33B8D9;
+	padding: 0;
+	margin: 0px;
+	height:200px; 
+	width: 100%;
+	text-align: center;
+	line-height: 200px;
+	font-family: 'Mosaic';
+	font-size: 170px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	color: white;
+}
+
+div.title {
+	width = 100%;
+	
+}
+
