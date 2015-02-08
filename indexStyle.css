@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Mosaic;
-	src: url(ehnree.github.io/MosaicFont.otf); 
+	src: url(https://www.github.com/ehnree/ehnree.github.io/blob/master/MosaicFont.otf); 
 }
 
 body {
@@ -23,8 +23,57 @@ div.head {
 	color: white;
 }
 
-div.title {
+#title {
 	width = 100%;
+	text-align: center;
+	font-family: Rockwell;
+	height:50px;
+	line-height: 50px;
+	font-size: 26px;
+	margin-top: 25px;
 	
 }
 
+#wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	margin-top:100px;
+	margin-bottom: 700px;
+}
+
+#photo {
+	height:100px;
+	width:auto;
+	float:left;
+	margin:0 auto;
+}
+
+
+#links {
+	float:right;
+	font-family: Rockwell;
+	height:200px;
+	line-height: 100px;
+	font-size: 26px;
+	text-decoration: none;
+	margin-top: 125px;
+}
+
+#footer {
+	text-align: center;
+	font-family: Rockwell;
+	margin-bottom: 25px;
+	opacity:0.69;
+}
+
+/* Resume specific css */
+
+h1 {
+	text-align: center;
+	font-family: Cambria;
+}
+
+p {
+	text-align: center;
+	font-family: Cambria;
+}
