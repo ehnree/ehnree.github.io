@@ -1,6 +1,11 @@
 @font-face {
 	font-family: Mosaic;
-	src: url(https://www.github.com/ehnree/ehnree.github.io/blob/master/MosaicFont.otf); 
+	src: url(MosaicFont.otf); 
+}
+
+@font-face {
+	font-family: Space;
+	src: url(Adamas-Regular.otf);
 }
 
 body {
@@ -77,3 +82,22 @@ p {
 	text-align: center;
 	font-family: Cambria;
 }
+
+/* Bio Css */
+
+#wrapperBio {
+	max-width: 1300px;
+	margin: 0 auto;
+	margin-top:100px;
+	margin-bottom: 700px;
+}
+
+#desc {
+	float:right;
+	font-family: Rockwell;
+	height:200px;
+	line-height: 20px;
+	font-size: 15px;
+	text-decoration: none;
+	margin-top: 50px;
+	}
