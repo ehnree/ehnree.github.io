@@ -1,12 +1,13 @@
-@font-face {
-	font-family: Mosaic;
-	src: url(MosaicFont.otf); 
-}
+/* CSS for ehnree.github.io */
+/* Created by: Henry Zhou   */
+/* Date: 2/11/15            */
 
 @font-face {
-	font-family: Space;
-	src: url(Adamas-Regular.otf);
+	font-family: Mosaic;
+	src: url(mosaicfont.otf); 
 }
+
+/* index.html CSS */
 
 body {
 	padding: 0;
