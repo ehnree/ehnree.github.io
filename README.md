@@ -1,2 +1,7 @@
 # ehnree.github.io
-My user page
+
+Home page for Henry Zhou
+
+Time Spent on Assignment: 3 hours
+
+Description//////
