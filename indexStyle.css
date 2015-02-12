@@ -83,6 +83,18 @@ p {
 	font-family: Cambria;
 }
 
+#ab {
+	text-align: center;
+	font-family: Cambria;
+}
+
+div.experience {
+	text-align: left;
+	font-family: Cambria;
+	margin: 0 auto;
+	width:500px;
+}
+
 /* Bio Css */
 
 #wrapperBio {
