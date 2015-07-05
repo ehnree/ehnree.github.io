@@ -5,6 +5,7 @@
 body {
 	padding: 0px;
 	margin: 0px;
+	font-family: 'Arvo', serif;
 }
 
 div.head {
@@ -21,7 +22,6 @@ div.head {
 
 #title {
 	text-align: center;
-	font-family: Rockwell;
 	height:50px;
 	line-height: 50px;
 	font-size: 26px;
@@ -46,7 +46,6 @@ div.head {
 
 #footer {
 	text-align: center;
-	font-family: Rockwell;
 	margin-bottom: 20px;
 	overflow: hidden;
 	z-index: -1;
@@ -56,14 +55,12 @@ div.head {
 	max-width: 1300px;
 	margin: 0 auto;
 	margin-top:20px;
-	font-family: Rockwell;
 	font-size: 30px;
 	margin-bottom: 470px;
 }
 
 #desc {
 	float:left;
-	font-family: Rockwell;
 	font-size: 20px;
 	height:200px;
 	line-height: 20px;

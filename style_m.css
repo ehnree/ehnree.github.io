@@ -8,6 +8,7 @@ body {
 	margin: 0px;
 	width:377px;
 	max-width: 100%;
+	font-family: 'Arvo';
 }
 
 div.head {
@@ -23,7 +24,6 @@ div.head {
 
 #title {
 	text-align: center;
-	font-family: Rockwell;
 	height:50px;
 	line-height: 50px;
 	font-size: 26px;
@@ -36,7 +36,7 @@ div.head {
 	width:377px;
 	background-image: url("monadnock_m.jpg");
 	max-width: 100%;
-	margin-bottom: 32px;
+	margin-bottom: 15px;
 }
 
 #footer {
@@ -45,13 +45,11 @@ div.head {
 /* Bio Css */
 
 #wrapperBio {
-	font-family: Rockwell;
 	font-size: 30px;
 	text-align: center;
 }
 
 #desc {
-	font-family: Rockwell;
 	font-size: 20px;
 	height:200px;
 	line-height: 20px;
