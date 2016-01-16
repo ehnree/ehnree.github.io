@@ -1,5 +1,4 @@
-
-<!DOCTYPE HTML> 
+<!DOCTYPE HTML>
 
 <html>
 
@@ -9,10 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 	<!-- Mobile menu CSS -->
-    <link href="style_m.css" rel="stylesheet" media="only screen and (max-device-width:667px)">
+    <link href="style_m.css" rel="stylesheet" media="screen and (max-width:667px)">
 
     <!-- desktop menu css -->
-    <link href="style.css" rel="stylesheet" media="print, screen and (min-device-width: 668px)" />
+    <link href="style.css" rel="stylesheet" media="screen and (min-width: 668px)" />
 
     <!-- Arvo css -->
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -37,25 +36,27 @@
 <body>
 	<a href="http://qrohlf.com/trianglify">
 		<div class="head">
-			</br>
+			<img src="triangle_crop.png"/>
 		</div>
 	</a>
 	<div id="wrapperBio">
-		 Henry Zhou 
-		
+		<div id="mobile_name">
+			Henry Zhou
+		</div>
 		<div id="photo">
-			
+			<img id="propic" src="monadnock.jpg"/>
 		</div>
 
 		<div id="desc">
-			<a href="resume.pdf">resume</a> 
+			<div id="Name"> Henry Zhou </div>
+			<a href="resume.pdf">resume</a>
 			</br>
 			<p class="category_head">projects</p>
 				<div class="category_body">
-					<a href="http://ehnree.github.io/tufts-dining/comp20-spring2015-team10"> * Tufts Dining Concept </a> 
+					<a href="http://ehnree.github.io/tufts-dining/comp20-spring2015-team10"> * Tufts Dining Concept </a>
 						</br>
 						</br>
-					<a href="http://quizmyth.herokuapp.com/login"> * Quiz Myth </a>	 
+					<a href="http://quizmyth.herokuapp.com/login"> * Quiz Myth </a>
 						</br>
 						</br>
 					<a href="http://boston360.video"> * Boston360video </a>
@@ -69,16 +70,28 @@
 					<a href="https://registration.xenegrade.com/abschools/courseDisplay.cfm?schID=8698"> * Loud and Proud </a>
 						</br>
 						</br>
-					<a href="http://www.veritasprep.com/"> * Veritas Prep SAT Tutor </a> 
+					<a href="http://www.veritasprep.com/"> * Veritas Prep SAT Tutor </a>
 				</div>
 			</span>
-			<span> 
-				<a href="mailto:henry.zhou@tufts.edu"> email: henry.zhou@tufts.edu </a> 
+			<span>
+				<a href="mailto:henry.zhou@tufts.edu"> email: henry.zhou@tufts.edu </a>
 			</span>
-			<br/> </br>
-			<a href="http://github.com/ehnree"> github profile </a>
+				</br>
+				</br>
+			<a href="http://github.com/ehnree"> github </a>
 		</div>
 	</div>
 </body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54281303-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </html>

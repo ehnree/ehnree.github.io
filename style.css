@@ -2,74 +2,59 @@
 /* Created by: Henry Zhou   */
 /* index.html CSS */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Arvo', serif;
 }
 
-div.head {
-	background-image: url("triangle.png");
-	padding: 0px;
-	margin: 0px;
-	height: 100px; 
-	width: 100%;
-	font-style: normal;
-	font-variant: normal;
-	color: white;
-	overflow: hidden;
+#wrapperBio {
+	font-size: 30px;
+	padding: 2vw;
 }
 
-#title {
-	text-align: center;
-	height:50px;
-	line-height: 50px;
-	font-size: 26px;
-	margin-top: 25px;
-	
-}
-
-#wrapper {
-	max-width: 900px;
-	margin: 0 auto;
-	margin-bottom: 700px;
-}
 
 #photo {
-	height:480px;
-	width:480px;
-	float:left;
-	margin-left: 22px;
-	background-image: url("monadnock.jpg");
+	padding: 20px;
+	max-width: 50%;
+    float:left;
+    margin: 0 auto;
+}
+
+img {
 	max-width: 100%;
+	height: auto;
+	width: auto;
 }
 
-#footer {
-	text-align: center;
-	margin-bottom: 20px;
-	overflow: hidden;
-	z-index: -1;
-}
-
-#wrapperBio {
-	max-width: 1300px;
-	margin: 0 auto;
-	margin-top:20px;
-	font-size: 30px;
-	margin-bottom: 470px;
+#propic {
+	border-radius: 14px;
+	max-width: 85%;
 }
 
 #desc {
+	width: 50%;
 	float:left;
-	font-size: 20px;
-	height:200px;
+	font-size: 1.8vw;
 	line-height: 20px;
-	text-decoration: none;
-	margin-top: 150px;
-	margin-left: 100px;
+	padding:5%;
 }
 
-a { 
+#Name {
+	text-align: center;
+	font-size: 2.8vw;
+	margin-bottom: 5vw;
+}
+
+#mobile_name {
+	visibility: hidden;
+}
+
+a {
     color:black;
     text-decoration:none;
 }
