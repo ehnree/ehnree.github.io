@@ -10,6 +10,10 @@ body {
 	font-family: 'Arvo';
 }
 
+div.head {
+	overflow: hidden;
+}
+
 #photo {
 	padding: 20px;
 }
@@ -42,6 +46,7 @@ img {
 #desc {
 	font-size: 4vw;
 	line-height: 20px;
+	margin-bottom: 50px;
 }
 
 a {
