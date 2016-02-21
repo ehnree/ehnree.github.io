@@ -63,6 +63,10 @@ a:hover, a:focus {
     text-decoration:underline;
 }
 
+p:hover {
+    text-decoration: underline;
+}
+
 .category_body {
 	margin-bottom: 20px;
 	margin-left: 20px;
