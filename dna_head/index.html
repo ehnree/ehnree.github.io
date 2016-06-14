@@ -8,15 +8,23 @@
     </head>
     <body>
         <script src="../js/three.js"></script>
-        <script>
+        <script src="../js/controls/orbitcontrols.js"></script>
 
+        <script>
             /* Set up the scene ***************/
             var scene = new THREE.Scene();
-            var camera = new THREE.OrthographicCamera( -20, 20, 5, -5, 0.1, 100000 );
+            var camera = new THREE.OrthographicCamera( -20, 20, 5, -5, 0.1, 100 );
             var renderer = new THREE.WebGLRenderer();
+            renderer.autoClear = false;
             renderer.setSize( window.innerWidth, 110);
+            // renderer.setSize( 700, window.innerHeight);
             document.body.appendChild( renderer.domElement );
             renderer.setClearColor( 0x262626, 1);
+
+            /* Orbit controls *****************/
+            var controls;
+            controls = new THREE.OrbitControls( camera, renderer.domElement );
+
 
             /* Create strand materials ***************/
             var outer_strands = new THREE.LineBasicMaterial({
@@ -89,8 +97,8 @@
             }
 
 
-            camera.position.z = 3;
-            camera.lookAt(new THREE.Vector3(-1,-3,0));
+            // camera.position.z = 3;
+            // camera.lookAt(new THREE.Vector3(-1,-3,0));
 
             line1.rotateZ(-0.2);
             line2.rotateZ(-0.2);
@@ -106,7 +114,7 @@
                 }
                 line1.rotateX(0.01);
                 line2.rotateX(0.01);
-
+                 controls.update();
                 renderer.render(scene, camera);
             };
 
