@@ -7,7 +7,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	max-width: 100%;
-	font-family: AppleGothic;
+	font-family: "Century Gothic";
 }
 
 div.head {
@@ -44,7 +44,7 @@ img {
 }
 
 #desc {
-	font-size: 4vw;
+	font-size: 3vw;
 	line-height: 20px;
 	margin-bottom: 50px;
 }
