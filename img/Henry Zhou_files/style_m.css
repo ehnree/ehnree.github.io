@@ -1,57 +1,52 @@
 /* CSS for ehnree.github.io */
 /* Created by: Henry Zhou   */
+/* Date: 2/11/15            */
 /* index.html CSS */
-
-* {
-    box-sizing: border-box;
-}
 
 body {
 	padding: 0px;
 	margin: 0px;
-	font-family: AppleGothic;
+	max-width: 100%;
+	font-family: "Century Gothic";
 }
 
-#wrapperBio {
-	font-size: 30px;
-	padding: 2vw;
+div.head {
+	overflow: hidden;
 }
-
 
 #photo {
 	padding: 20px;
-	max-width: 50%;
-    float:left;
-    margin: 0 auto;
 }
 
 img {
-	max-width: 100%;
 	height: auto;
 	width: auto;
 }
 
 #propic {
+	max-width: 70%;
 	border-radius: 14px;
-	max-width: 85%;
 }
 
-#desc {
-	width: 50%;
-	float:left;
-	font-size: 1.8vw;
-	line-height: 20px;
-	padding:5%;
-}
+/* Bio Css */
 
-#Name {
+#wrapperBio {
+	font-size: 30px;
 	text-align: center;
-	font-size: 2.8vw;
-	margin-bottom: 5vw;
 }
 
 #mobile_name {
-	visibility: hidden;
+	padding:7px;
+}
+
+#Name {
+	visibility:hidden;
+}
+
+#desc {
+	font-size: 3vw;
+	line-height: 20px;
+	margin-bottom: 50px;
 }
 
 a {
@@ -61,10 +56,6 @@ a {
 
 a:hover, a:focus {
     text-decoration:underline;
-}
-
-p:hover {
-    text-decoration: underline;
 }
 
 .category_body {

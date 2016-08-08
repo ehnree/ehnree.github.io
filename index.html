@@ -1,17 +1,18 @@
 <!DOCTYPE HTML>
 
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
 	<title>Henry Zhou</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
 
 	<!-- Mobile menu CSS -->
-    <link href="style_m.css" rel="stylesheet" media="screen and (max-width:667px)">
+    <!--<link href="css/style_m.css" rel="stylesheet" media="screen and (max-width:667px)">-->
 
     <!-- desktop menu css -->
-    <link href="style.css" rel="stylesheet" media="screen and (min-width: 668px)" />
+    <link href="css/style.css" rel="stylesheet" />
 
     <!-- Arvo css -->
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -19,193 +20,78 @@
     <!-- jQeury -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <script type="text/javascript">
-		$(document).ready(function()
-		{
-		  //hide the all of the element with class msg_body
-		  $(".category_body").hide();
-		  //toggle the componenet with class msg_body
-		  $(".category_head").click(function()
-		  {
-		    $(this).next(".category_body").slideToggle(200);
-		  });
-		});
-	</script>
-	<style>
-        body { margin: 0; }
-        canvas { width: 100%; height: 100% }
-    </style>
+    <!-- fontAwesome -->
+    <script src="https://use.fontawesome.com/4a0822de08.js"></script>
+
+    <!-- three.js -->
+    <script src="js/three.js"></script>
 </head>
 
 <body>
-	<script src="js/three.js"></script>
-        <script>
+    <!--dna code-->
+    <script src="js/dna.js"></script>
 
-            /* Set up the scene ***************/
-            var scene = new THREE.Scene();
-            var camera = new THREE.OrthographicCamera( -20, 20, 5, -5, 0.1, 100000 );
-            var renderer = new THREE.WebGLRenderer();
-            renderer.setSize( window.innerWidth, 110);
-            document.body.appendChild( renderer.domElement );
-            renderer.setClearColor( 0x262626, 1);
-
-            /* Create strand materials ***************/
-            var outer_strands = new THREE.LineBasicMaterial({
-                color: 0x336699, linewidth: 5
-            });
-            var inner_strands = new THREE.LineBasicMaterial({
-                color: 0xFFFFFF, linewidth: 5
-            });
-
-            var material_g = new THREE.LineBasicMaterial({
-                color: 0x00FF00, linewidth: 2
-            });
-            var material_y = new THREE.LineBasicMaterial({
-                color: 0xffff00, linewidth: 2
-            });
-            var material_b = new THREE.LineBasicMaterial({
-                color: 0x0000FF, linewidth: 2
-            });
-            var material_r = new THREE.LineBasicMaterial({
-                color: 0xFF0000, linewidth: 2
-            });
-
-            /* Generate vertices ***************/
-            var strand = false;
-            var cross_sections = [];
-            var geometry1 = new THREE.Geometry();
-            for (var i = -10; i < 50; i+=0.1){
-                geometry1.vertices.push(
-                    new THREE.Vector3( i, 3 * Math.sin(i/4), 3 * Math.cos(i/4) )
-                );
-
-                if ( Math.floor(i * 10) % 10 == 0 ) {
-                    var cross_section_1 = new THREE.Geometry();
-                    var cross_section_2 = new THREE.Geometry();
-                    var start = new THREE.Vector3( i, 3 * Math.sin(i/4), 3 * Math.cos(i/4) );
-                    var end =  new THREE.Vector3( i, -3 * Math.sin(i/4), -3 * Math.cos(i/4) );
-                    var middle = new THREE.Vector3( i , 0, 0 );
-
-                    cross_section_1.vertices.push( start );
-                    cross_section_1.vertices.push( middle );
-                    cross_section_2.vertices.push( middle );
-                    cross_section_2.vertices.push( end );
-
-                    if (strand) {
-                        cross_sections.push(new THREE.Line( cross_section_1, material_g ));
-                        cross_sections.push(new THREE.Line( cross_section_2, material_y ));
-                        strand = !strand;
-                    } else {
-                        cross_sections.push(new THREE.Line( cross_section_1, material_b ));
-                        cross_sections.push(new THREE.Line( cross_section_2, material_r ));
-                        strand = !strand;
-                    }
-                }
-            }
-
-            var geometry2 = new THREE.Geometry();
-            for (var i = -10; i < 50; i+=0.1){
-                geometry2.vertices.push(
-                    new THREE.Vector3( i, -3 * Math.sin(i/4), -3 * Math.cos(i/4) )
-                );
-            }
-
-            /* Add dna to scene  ******************/
-            var line1 = new THREE.Line( geometry1, outer_strands );
-            var line2 = new THREE.Line( geometry2, outer_strands );
-            scene.add( line1 );
-            scene.add( line2 );
-            for (var i = 0; i < cross_sections.length; i++) {
-                scene.add(cross_sections[i]);
-            }
+    <!-- Page Header -->
+    <div class="headerWrapper">
+        <div class="headerContent">
+            <span style="color: red">Mobile site in development</span>
+            <a href="index.html"><h1 class="headerName">Henry Zhou</h1></a>
+            <h4>Beta 1.0</h4>
+            <h2 class="headerLinks">
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="documents/resume.pdf" target="_blank">Resume</a>
+                <a href="blog_home.html">Blog</a>
+                <a href="neat.html">Neat</a>
+            </h2>
+        </div>
+    </div>
 
 
-            camera.position.z = 3;
-            camera.lookAt(new THREE.Vector3(-1,-3,0));
-
-            line1.rotateZ(-0.2);
-            line2.rotateZ(-0.2);
-            for (var i = 0; i < cross_sections.length; i++) {
-                    cross_sections[i].rotateZ(-0.2);
-            }
-
-            camera.position.x = 20;
-            var render = function () {
-                requestAnimationFrame( render );
-                for (var i = 0; i < cross_sections.length; i++) {
-                    cross_sections[i].rotateX(0.01);
-                }
-                line1.rotateX(0.01);
-                line2.rotateX(0.01);
-
-                renderer.render(scene, camera);
-            };
-
-            render();
-        </script>
-
-	<!-- <a href="http://qrohlf.com/trianglify">
-		<div class="head">
-			<img src="triangle_crop.png"/>
-		</div>
-	</a> -->
-
-	<div id="wrapperBio">
-		<div id="mobile_name">
-			Henry Zhou
-		</div>
-		<div id="photo">
-			<img id="propic" src="snowman.jpg"/>
-		</div>
-
-		<div id="desc">
-			<div id="Name"> Henry Zhou </div>
-<!--             <a href="about.html">about</a>
-            <span> Rising Senior studying Computer Science at Tufts University. Current Software Engineering Intern at Bloomberg LP
-            </br>
-            </br> -->
-            <a href="resume.pdf">resume</a>
-			</br>
-			<p class="category_head">projects</p>
-				<div class="category_body">
-					<a href="http://ehnree.github.io/tufts-dining/comp20-spring2015-team10"> * Tufts Dining Concept </a>
-						</br>
-						</br>
-					<a href="terraform/index.html"> * Terraform </a>
-						</br>
-						</br>
-					<a href="http://quizmyth.herokuapp.com/login"> * Quiz Myth </a>
-						</br>
-						</br>
-					<a href="http://boston360.video"> * Boston360video </a>
-						</br>
-						</br>
-					<a href="https://www.youtube.com/watch?v=21Mvo1Boz4o&feature=youtu.be"> * Open House VR </a>
-				</div>
-			<span>
-            <p class ="category_head"> papers </p>
-                <div class="category_body">
-                    <a href="documents/papers/rustvsc.pdf"> * Comparison of Concurrency in Rust&amp;C </a>
-                        </br>
-                        </br>
-                    <a href="documents/papers/mammogram_conv_net.pdf"> * Mammogram Classification Using Convolutional Neural Networks </a>
+    <!-- Body -->
+    <div class="homeWrapper">
+        <!-- blog divs -->
+        <div id="homeBlogs">
+            <h3 > Latest Posts </h3>
+            <hr>
+            <div class="homeBlogLink">
+                <img src="img/blogIcons/post1.png">
+                <div id="homeBlogLinkTitle">
+                    <a href="blog/1_initpost.html">Site redo + First post</a><br>
+                    <span class="blog-date">June 18th, 2016</span>
                 </div>
-			<p class ="category_head"> teaching </p>
-				<div class="category_body">
-					<a href="https://registration.xenegrade.com/abschools/courseDisplay.cfm?schID=8698"> * Loud and Proud </a>
-						</br>
-						</br>
-					<a href="http://www.veritasprep.com/"> * Veritas Prep SAT Tutor </a>
-				</div>
-			</span>
-                <hr>
-				<a href="mailto:henry.zhou@tufts.edu"> email</a> &nbsp;&nbsp;
-			<a href="http://github.com/ehnree"> github </a> &nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/henry-zhou-33821075"> linkedIn </a>
-		</div>
-	</div>
+            </div>
+             <a href="blog_home.html" id="morePosts"><h2> More posts </h2> </a>
+        </div>
+
+
+
+
+        <!-- Right Side: home about div -->
+        <div id="homeAbout">
+            <h3> Welcome to my website! </h3>
+            <hr>
+            <p> Hey! I'm Henry 😊 This is where I write and post about stuff that I'm interested in or events going on in my life. </br></br>
+                You can also shoot me an email at <a href="mailto:henry.zhou@tufts.edu" target="_top">henry.zhou@tufts.edu</a> </p>
+            <p> <b>Currently</b>: Learning VR development and working on personal projects before senior year! </p>
+
+            <img src="img/snowman.jpg">
+
+            <div id="homeAboutIcons">
+                <a href="https://www.facebook.com/henry.zhou.568"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/henry-zhou-33821075">  <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/h_zow/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                <a href="https://github.com/ehnree"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                <br><br>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+            </div>
+            <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+        </div>
+    </div>
 </body>
 
+
+<!-- Analytics Script -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

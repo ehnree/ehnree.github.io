@@ -1,0 +1,289 @@
+/* CSS for ehnree.github.io */
+/* Created by: Henry Zhou   */
+/* index.html CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: AppleGothic;
+    /*background-image: url("../img/retina_dust.jpg");*/
+}
+
+
+
+/*2.0 stuff*/
+
+/*header css*/
+.headerWrapper {
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 30px;
+
+}
+
+.headerName {
+    font-size: 250%;
+}
+
+.headerContent {
+    text-align: center;
+    font-family: Silom;
+}
+
+.headerContent > a {
+    text-decoration: none;
+    color:black;
+}
+
+.headerContent > a :hover {
+    color:blue;
+}
+
+.headerLinks {
+    font-size: 170%;
+    word-spacing: 100px;
+}
+
+.headerLinks :hover{
+    color:blue;
+}
+
+.headerLinks > a {
+    color:black;
+    text-decoration:none;
+}
+
+
+
+
+
+/*homepage body css*/
+.homeWrapper {
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+}
+
+#homeBlogs {
+    width: 600px;
+    float:left;
+    margin: 0 auto;
+    margin-right: 75px;
+    margin-left: 100px;
+}
+
+#homeBlogs > h3 {
+    font-size: 23px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#homeBlogs > a {
+    text-align: center;
+    color:black;
+    text-decoration: none;
+}
+
+#homeBlogs > a :hover {
+    opacity: 0.5;
+    margin-top: 50px;
+}
+
+.homeBlogLink {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+    margin: 0 auto;
+}
+
+.homeBlogLink > img {
+    max-width:  170px;
+    max-height: 170px;
+    float:left;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#homeBlogLinkTitle {
+    float:left;
+    width: 390px;
+    margin-top: 65px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+#homeBlogLinkTitle > a {
+    text-decoration: none;
+}
+
+.blog-date {
+    font-size: 12px;
+}
+
+#morePosts {
+    margin-top: 40px;
+}
+/*homeAbout Css*/
+
+#homeAbout {
+    width: 300px;
+    float:left;
+}
+
+#homeAbout > h3 {
+    font-size: 23px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#homeAbout > p {
+    font-size: 13px;
+}
+
+#homeAbout > img {
+    max-width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+#homeAboutIcons {
+    text-align: center;
+    margin: 20px;
+}
+
+#homeAboutIcons > a {
+    color:black;
+    text-decoration:none;
+}
+
+/*i {*/
+    /*display:inline-block;*/
+    /*font-size: 40px;*/
+    /*line-height: 50px;*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*text-align: center;*/
+    /*vertical-align: bottom;*/
+/*}*/
+
+
+/*about page*/
+.aboutWrapper {
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 100px;
+}
+
+/*about body css*/
+#aboutImages {
+    width: 300px;
+    height: 600px;
+    float:left;
+    margin: 0 auto;
+    margin-right: 35px;
+    margin-left: 100px;
+}
+
+#aboutImages > img {
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*homeAbout Css*/
+#aboutDesc {
+    width: 600px;
+    float:left;
+}
+
+.pageWrapper {
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+}
+#pageHeader {
+    text-align: center;
+    color: #1f7e9a;
+}
+
+
+/*blog post css*/
+.blogPostWrapper {
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 100px;
+}
+
+.blogPost {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#disqus_thread {
+    margin-bottom: 150px;
+}
+
+
+/*projects page css*/
+.projects{
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/*individual projects*/
+.terraform {
+    background: url("../img/terraform.png") no-repeat;
+}
+
+.mammogram {
+    background: url("../img/mammogram.png") no-repeat;
+}
+
+.rustvsc {
+    background: url("../img/rustvsc.png") no-repeat;
+}
+
+.redditsentiment {
+    background: url("../img/twitter_reddit.png") no-repeat;
+}
+
+.project-link {
+    display: inline-block;
+    width: 240px;
+    height: 200px;
+    margin: 15px 25px 15px 25px;
+    text-decoration: none;
+    background-size: contain;
+    vertical-align: top;
+    margin-bottom: 40px;
+}
+
+
+.project-link-desc {
+    padding-top: 90px;
+    opacity: 0;
+    color: white;
+    width: 240px;
+    height: 200px;
+}
+
+.project-link:hover div {
+    opacity: 0.9;
+    background: cornflowerblue;
+}
