@@ -3,7 +3,7 @@
     var scene = new THREE.Scene();
     var camera = new THREE.OrthographicCamera( -20, 20, 5, -5, 0.1, 100000 );
     var renderer = new THREE.WebGLRenderer();
-    renderer.setSize( window.innerWidth, 150);
+    renderer.setSize( window.innerWidth, 110);
     document.body.appendChild( renderer.domElement );
     renderer.setClearColor( 0x262626, 1);
 
