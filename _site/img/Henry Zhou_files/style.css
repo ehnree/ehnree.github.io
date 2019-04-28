@@ -1,0 +1,223 @@
+/* CSS for ehnree.github.io */
+/* Created by: Henry Zhou   */
+/* index.html CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: AppleGothic;
+    /*background-image: url("../img/retina_dust.jpg");*/
+}
+
+
+
+/*2.0 stuff*/
+
+/*header css*/
+.headerWrapper {
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 30px;
+
+}
+
+.headerName {
+    font-size: 250%;
+}
+
+.headerContent {
+    text-align: center;
+    font-family: Silom;
+}
+
+.headerContent > a {
+    text-decoration: none;
+    color:black;
+}
+
+.headerContent > a :hover {
+    color:blue;
+}
+
+.headerLinks {
+    font-size: 170%;
+    word-spacing: 100px;
+}
+
+.headerLinks :hover{
+    color:blue;
+}
+
+.headerLinks > a {
+    color:black;
+    text-decoration:none;
+}
+
+
+
+
+
+/*homepage body css*/
+.homeWrapper {
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+}
+
+#homeBlogs {
+    width: 600px;
+    float:left;
+    margin: 0 auto;
+    margin-right: 75px;
+    margin-left: 100px;
+}
+
+#homeBlogs > h3 {
+    font-size: 23px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#homeBlogs > a {
+    text-align: center;
+    color:black;
+    text-decoration: none;
+}
+
+#homeBlogs > a :hover {
+    opacity: 0.5;
+    margin-top: 50px;
+}
+
+.homeBlogLink {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+    margin: 0 auto;
+}
+
+.homeBlogLink > img {
+    max-width:  170px;
+    max-height: 170px;
+    float:left;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#homeBlogLinkTitle {
+    float:left;
+    width: 390px;
+    margin-top: 65px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+#homeBlogLinkTitle > a {
+    text-decoration: none;
+}
+
+.blog-date {
+    font-size: 12px;
+}
+
+#morePosts {
+    margin-top: 40px;
+}
+/*homeAbout Css*/
+
+#homeAbout {
+    width: 300px;
+    float:left;
+}
+
+#homeAbout > h3 {
+    font-size: 23px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#homeAbout > p {
+    font-size: 13px;
+}
+
+#homeAbout > img {
+    max-width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+#homeAboutIcons {
+    text-align: center;
+    margin: 20px;
+}
+
+#homeAboutIcons > a {
+    color:black;
+    text-decoration:none;
+}
+
+i {
+    display:inline-block;
+    font-size: 40px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+/*about page*/
+.aboutWrapper {
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 100px;
+}
+
+/*about body css*/
+#aboutImages {
+    width: 300px;
+    height: 600px;
+    float:left;
+    margin: 0 auto;
+    margin-right: 35px;
+    margin-left: 100px;
+}
+
+#aboutImages > img {
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*homeAbout Css*/
+#aboutDesc {
+    width: 600px;
+    float:left;
+}
+
+
+.blogHomeWrapper {
+    width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+}
+.h3 {
+    text-align: center;
+}
+
+
+
+
+

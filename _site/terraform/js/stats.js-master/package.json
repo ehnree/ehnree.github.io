@@ -1,0 +1,27 @@
+{
+  "name": "stats.js",
+  "version": "0.16.0",
+  "description": "JavaScript Performance Monitor",
+  "main": "build/stats.min.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrdoob/stats.js.git"
+  },
+  "keywords": [
+    "performance",
+    "fps",
+    "stats"
+  ],
+  "author": "mrdoob",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrdoob/stats.js/issues"
+  },
+  "homepage": "https://github.com/mrdoob/stats.js"
+}

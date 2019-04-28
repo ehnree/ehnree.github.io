@@ -1,0 +1,64 @@
+/* CSS for ehnree.github.io */
+/* Created by: Henry Zhou   */
+/* Date: 2/11/15            */
+/* index.html CSS */
+
+body {
+	padding: 0px;
+	margin: 0px;
+	max-width: 100%;
+	font-family: "Century Gothic";
+}
+
+div.head {
+	overflow: hidden;
+}
+
+#photo {
+	padding: 20px;
+}
+
+img {
+	height: auto;
+	width: auto;
+}
+
+#propic {
+	max-width: 70%;
+	border-radius: 14px;
+}
+
+/* Bio Css */
+
+#wrapperBio {
+	font-size: 30px;
+	text-align: center;
+}
+
+#mobile_name {
+	padding:7px;
+}
+
+#Name {
+	visibility:hidden;
+}
+
+#desc {
+	font-size: 3vw;
+	line-height: 20px;
+	margin-bottom: 50px;
+}
+
+a {
+    color:black;
+    text-decoration:none;
+}
+
+a:hover, a:focus {
+    text-decoration:underline;
+}
+
+.category_body {
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
