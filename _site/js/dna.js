@@ -1,11 +1,11 @@
 
     /* Set up the scene ***************/
     var scene = new THREE.Scene();
-    var camera = new THREE.OrthographicCamera( -20, 20, 5, -5, 0.1, 100000 );
+    var camera = new THREE.OrthographicCamera( -15, 15, 5, -5, 0.1, 100000 );
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, 110);
     document.body.appendChild( renderer.domElement );
-    renderer.setClearColor( 0x262626, 1);
+    renderer.setClearColor( 0xffffff, 1);
 
     /* Create strand materials ***************/
     var outer_strands = new THREE.LineBasicMaterial({
@@ -79,6 +79,8 @@
 
 
     camera.position.z = 3;
+    // camera.position.y = 3;
+
     camera.lookAt(new THREE.Vector3(-1,-3,0));
 
     line1.rotateZ(-0.2);

@@ -4,7 +4,7 @@
 
 * {
     box-sizing: border-box;
-    background-color: GhostWhite;
+    /*background-color: #ffcccc;*/
 }
 
 body {
@@ -20,9 +20,8 @@ body {
 
 /*header css*/
 .headerWrapper {
-    width:1100px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:15%;
+    /*margin-right:auto;*/
     margin-top: 30px;
 
 }
@@ -32,8 +31,8 @@ body {
 }
 
 .headerContent {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
+    /*text-align: center;*/
+    /*font-family: 'Raleway', sans-serif;*/
     font-weight: 10;
 }
 
@@ -42,17 +41,12 @@ body {
     color:black;
 }
 
-.headerContent > a :hover {
-    color:blue;
-}
-
 .headerLinks {
-    font-size: 170%;
     word-spacing: 100px;
 }
 
 .headerLinks :hover{
-    color:blue;
+    /*color:purple;*/
 }
 
 .headerLinks > a {
@@ -60,8 +54,31 @@ body {
     text-decoration:none;
 }
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .2s;
+}
 
-
+a:hover {
+  color: hotPink;
+}
+@media (-webkit-min-device-pixel-ratio:0) {
+  a {
+    background-color: skyBlue;
+    background-image: -webkit-linear-gradient(left, hotPink 0%, blue 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: 0.4s .01s;
+    -webkit-background-clip: text;
+  }
+  a:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: 1s 0;
+  }
+}
 
 
 /*homepage body css*/
@@ -229,7 +246,7 @@ body {
 }
 
 .blogPost {
-    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Raleway', sans-serif;*/
 }
 
 
