@@ -84,9 +84,9 @@ a:hover {
 /*homepage body css*/
 .homeWrapper {
     width:1100px;
+    margin-top: 2%;
     margin-left:auto;
     margin-right:auto;
-    margin-top: 50px;
 }
 
 #homeBlogs {
@@ -115,30 +115,17 @@ a:hover {
 }
 
 .homeBlogLink {
-    margin-top: 30px;
     margin-bottom: 30px;
     float: left;
     margin: 0 auto;
 }
 
 .homeBlogLink > img {
-    max-width:  170px;
-    max-height: 170px;
+    max-width:  150%;
+    max-height: 150%;
     float:left;
     margin: 0 auto;
     border-radius: 10px;
-}
-
-#homeBlogLinkTitle {
-    float:left;
-    width: 390px;
-    margin-top: 65px;
-    margin-left: 25px;
-    font-size: 20px;
-}
-
-#homeBlogLinkTitle > a {
-    text-decoration: none;
 }
 
 .blog-date {
